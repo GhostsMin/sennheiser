@@ -1,0 +1,1058 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+  font-weight: normal;
+  color: #666;
+  border: none;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ul, ol {
+  list-style: none; }
+
+input, button, textarea, select, input:focus, textarea:focus {
+  background: none;
+  outline: none; }
+
+textarea {
+  resize: none;
+  overflow: auto; }
+
+select {
+  border: none; }
+
+a, button {
+  cursor: pointer; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+/* 合并表格线 && 去掉间隙 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 去掉webkit默认的表单样式 */
+button, input, optgroup, select, textarea {
+  -webkit-appearance: none; }
+
+/* 去掉a、input和button点击时的蓝色外边框和灰色半透明背景 */
+a, button, input, optgroup, select, textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/* 禁止长按链接与图片弹出菜单 */
+a, img {
+  -webkit-touch-callout: none; }
+
+/* img,video下面产生间隙清除 */
+video, img {
+  vertical-align: top; }
+
+/* …^_^… 重置 HTML5 元素搜索 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+/* 去掉mark默认背景颜色 */
+mark {
+  background: none; }
+
+/* 清除上下标位置 */
+sub, sup {
+  vertical-align: baseline; }
+
+/* 其它清除 */
+:link, :visited, ins {
+  text-decoration: none; }
+
+:focus {
+  outline: 0; }
+
+/* 禁止页面选中复制 *IE10、Oprea15以下不支持，若需要，要在需要禁止选中的元素上面添加一个属性unselectable="on" */
+/*
+html,body{ -moz-user-select: -moz-none; -moz-user-select: none; -o-user-select:none; -khtml-user-select:none; -webkit-user-select:none; -ms-user-select:none; user-select:none; }
+*/
+/* 选中颜色修改 *IE10以下不支持*/
+::selection {
+  background: #FF8888;
+  color: #FFFFFF; }
+
+::-moz-selection {
+  background: #FF8888;
+  color: #FFFFFF; }
+
+::-webkit-selection {
+  background: #FF8888;
+  color: #FFFFFF; }
+
+/* …………………………………………^_^………………………………………… 自定义样式 …………………………………………^_^………………………………………… */
+/* 设置浮动 */
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/* 清除浮动 引用了bootstrap可以使用clearfix */
+.clear {
+  clear: both; }
+
+/* 用下面的代码去掉你要去掉的元素的边框 */
+.clearoutline:focus {
+  outline: none; }
+
+/* …………………………………………^_^………………………………………… 其它样式清除 …………………………………………^_^………………………………………… */
+/* 清除bootstrap中a的下划线 */
+a:link {
+  text-decoration: none;
+  color: #666; }
+
+b {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+a, u {
+  text-decoration: none;
+  color: black; }
+
+body {
+  background-color: #f4f4f4; }
+
+a {
+  font-size: 14px; }
+  a:hover {
+    color: #1e96d4;
+    text-decoration: underline; }
+
+header {
+  background-color: #fff;
+  line-height: 40px; }
+  header #_headerTop {
+    width: 1300px;
+    margin: 0 auto;
+    height: 40px; }
+    header #_headerTop #_headerLift, header #_headerTop #_headerRight {
+      float: right; }
+      header #_headerTop #_headerLift a, header #_headerTop #_headerRight a {
+        font-size: 12px;
+        color: #acacac; }
+        header #_headerTop #_headerLift a:hover, header #_headerTop #_headerRight a:hover {
+          color: #1e96d4;
+          text-decoration: underline; }
+        header #_headerTop #_headerLift a :hover, header #_headerTop #_headerRight a :hover {
+          color: #1e96d4;
+          text-decoration: underline; }
+        header #_headerTop #_headerLift a #phone, header #_headerTop #_headerRight a #phone {
+          color: #1e96d4; }
+        header #_headerTop #_headerLift a .iconfont, header #_headerTop #_headerRight a .iconfont {
+          text-decoration: none;
+          font-size: 14px;
+          margin: 0 3px; }
+      header #_headerTop #_headerLift em, header #_headerTop #_headerRight em {
+        margin: 0 8px;
+        display: inline-block; }
+  header #_headerBottom {
+    width: 1300px;
+    margin: 0 auto;
+    height: 70px;
+    overflow: hidden; }
+    header #_headerBottom div {
+      float: left; }
+    header #_headerBottom div:nth-child(2) {
+      margin-left: 40px; }
+    header #_headerBottom div:nth-child(3) {
+      float: right;
+      border: 1px solid black;
+      width: 700px;
+      height: 50px; }
+      header #_headerBottom div:nth-child(3) .iconfont {
+        font-size: 24px;
+        color: #1e96d4; }
+      header #_headerBottom div:nth-child(3) input {
+        width: 650px;
+        height: 50px;
+        font-size: 18px; }
+
+#nav {
+  background-color: #f7f7f7; }
+  #nav nav {
+    width: 1300px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f7f7f7; }
+    #nav nav ul li:nth-child(1):hover #inEar {
+      display: block;
+      z-index: 3; }
+    #nav nav ul li:nth-child(2):hover #Game {
+      display: block;
+      z-index: 3; }
+    #nav nav ul li:nth-child(3):hover #Headset {
+      display: block;
+      z-index: 3; }
+    #nav nav ul li:nth-child(4):hover #WireLess {
+      display: block;
+      z-index: 3; }
+    #nav nav ul li:nth-child(5):hover #Hifi {
+      display: block;
+      z-index: 3; }
+    #nav nav ul li:nth-child(6):hover #Fittings {
+      display: block;
+      z-index: 3; }
+    #nav nav ul li:nth-child(7) a {
+      position: relative; }
+      #nav nav ul li:nth-child(7) a .Hot {
+        width: 30px;
+        height: 10px;
+        line-height: 10px;
+        text-align: center;
+        word-spacing: 3px;
+        font-size: 10px;
+        color: pink;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        right: 0; }
+    #nav nav ul li:nth-child(9) a {
+      position: relative; }
+      #nav nav ul li:nth-child(9) a .Hot {
+        width: 30px;
+        height: 10px;
+        line-height: 10px;
+        text-align: center;
+        word-spacing: 3px;
+        font-size: 10px;
+        color: pink;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        right: -30px; }
+    #nav nav ul li {
+      position: relative; }
+      #nav nav ul li a {
+        float: left;
+        margin-right: 50px;
+        font-size: 14px; }
+        #nav nav ul li a span {
+          color: #1e96d4; }
+          #nav nav ul li a span em {
+            color: #1e96d4; }
+      #nav nav ul li :hover {
+        text-decoration: none; }
+
+@keyframes MRight {
+  0% {
+    right: calc(100% - 25px); }
+  49% {
+    right: calc(100% + 10px);
+    opacity: 0; }
+  50% {
+    right: -10px; }
+  51% {
+    opacity: 0; }
+  100% {
+    right: 10px;
+    opacity: 1; } }
+    #nav nav ul #inEarBorder::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border: 7px solid transparent;
+      border-top-color: #acacac;
+      position: absolute;
+      left: 43px;
+      top: 22px; }
+    #nav nav ul #inEarBorder::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border: 7px solid transparent;
+      border-top-color: white;
+      position: absolute;
+      left: 43px;
+      top: 19px; }
+    #nav nav ul #inEar {
+      width: 1300px;
+      height: 350px;
+      background-color: rgba(172, 172, 172, 0.7);
+      position: absolute;
+      top: 50px;
+      padding-top: 40px;
+      display: none; }
+      #nav nav ul #inEar ul {
+        float: left;
+        margin-left: 30px; }
+        #nav nav ul #inEar ul li a {
+          font-size: 12px;
+          margin-top: -15px; }
+          #nav nav ul #inEar ul li a:hover {
+            color: #1e96d4;
+            text-decoration: underline; }
+        #nav nav ul #inEar ul li .Browseall {
+          padding-right: 0px;
+          width: 120px;
+          height: 45px;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 14px;
+          margin: 20px 45px 0 0;
+          position: relative;
+          overflow: hidden; }
+          #nav nav ul #inEar ul li .Browseall #MoveRight {
+            position: absolute;
+            right: 10px;
+            font-size: 30px;
+            font-weight: 100;
+            animation: MRight 0.6s linear; }
+          #nav nav ul #inEar ul li .Browseall:hover {
+            color: black;
+            text-decoration: none; }
+      #nav nav ul #inEar .inEarImg {
+        width: 260px;
+        height: 310px;
+        float: left;
+        background-color: #fff;
+        margin-left: 13px; }
+        #nav nav ul #inEar .inEarImg a {
+          width: 260px;
+          height: 310px; }
+          #nav nav ul #inEar .inEarImg a :hover {
+            color: #1e96d4; }
+          #nav nav ul #inEar .inEarImg a img {
+            width: 260px;
+            height: 260px; }
+          #nav nav ul #inEar .inEarImg a p {
+            text-align: center;
+            font-size: 12px; }
+      #nav nav ul #inEar .circleImg_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 280px;
+        height: 280px;
+        position: relative; }
+        #nav nav ul #inEar .circleImg_box .circleImg {
+          width: 230px;
+          height: 230px;
+          border-radius: 50%;
+          overflow: hidden; }
+          #nav nav ul #inEar .circleImg_box .circleImg img {
+            width: 230px;
+            transition: all 0.3s linear; }
+            #nav nav ul #inEar .circleImg_box .circleImg img:hover {
+              transform: scale(1.08); }
+        #nav nav ul #inEar .circleImg_box p {
+          position: absolute;
+          color: #f7f7f7; }
+    #nav nav ul #Game {
+      width: 1300px;
+      height: 350px;
+      background-color: rgba(172, 172, 172, 0.7);
+      position: absolute;
+      top: 50px;
+      padding-top: 40px;
+      display: none; }
+      #nav nav ul #Game ul {
+        float: left;
+        margin-left: 30px; }
+        #nav nav ul #Game ul li a {
+          font-size: 12px;
+          margin-top: -15px; }
+          #nav nav ul #Game ul li a:hover {
+            color: #1e96d4;
+            text-decoration: underline; }
+        #nav nav ul #Game ul li .Browseall {
+          width: 120px;
+          height: 45px;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 14px;
+          margin: 20px 45px 0 0;
+          position: relative;
+          overflow: hidden; }
+          #nav nav ul #Game ul li .Browseall:hover {
+            color: black;
+            text-decoration: none; }
+          #nav nav ul #Game ul li .Browseall #MoveRight_2 {
+            position: absolute;
+            right: 10px;
+            font-size: 30px;
+            font-weight: 100;
+            animation: MRight 0.6s linear; }
+      #nav nav ul #Game .GameImg {
+        width: 260px;
+        height: 310px;
+        float: left;
+        background-color: #fff;
+        margin-left: 13px; }
+        #nav nav ul #Game .GameImg a {
+          width: 260px;
+          height: 310px; }
+          #nav nav ul #Game .GameImg a :hover {
+            color: #1e96d4; }
+          #nav nav ul #Game .GameImg a img {
+            width: 260px;
+            height: 260px; }
+          #nav nav ul #Game .GameImg a p {
+            text-align: center;
+            font-size: 12px; }
+      #nav nav ul #Game .circleImg_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 280px;
+        height: 280px;
+        position: relative; }
+        #nav nav ul #Game .circleImg_box .circleImg {
+          width: 230px;
+          height: 230px;
+          border-radius: 50%;
+          overflow: hidden; }
+          #nav nav ul #Game .circleImg_box .circleImg img {
+            width: 230px;
+            transition: all 0.3s linear; }
+            #nav nav ul #Game .circleImg_box .circleImg img:hover {
+              transform: scale(1.08); }
+        #nav nav ul #Game .circleImg_box p {
+          position: absolute;
+          color: #f7f7f7; }
+    #nav nav ul #Headset {
+      width: 1300px;
+      height: 350px;
+      background-color: rgba(172, 172, 172, 0.7);
+      position: absolute;
+      top: 50px;
+      padding-top: 40px;
+      display: none; }
+      #nav nav ul #Headset ul {
+        float: left;
+        margin-left: 30px; }
+        #nav nav ul #Headset ul li a {
+          font-size: 12px;
+          margin-top: -15px; }
+          #nav nav ul #Headset ul li a:hover {
+            color: #1e96d4;
+            text-decoration: underline; }
+        #nav nav ul #Headset ul li .Browseall {
+          width: 120px;
+          height: 45px;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 14px;
+          margin: 20px 45px 0 0;
+          position: relative;
+          overflow: hidden; }
+          #nav nav ul #Headset ul li .Browseall:hover {
+            color: black;
+            text-decoration: none; }
+          #nav nav ul #Headset ul li .Browseall #MoveRight_3 {
+            position: absolute;
+            right: 10px;
+            font-size: 30px;
+            font-weight: 100;
+            animation: MRight 0.6s linear; }
+      #nav nav ul #Headset .HeadsetImg {
+        width: 260px;
+        height: 310px;
+        float: left;
+        background-color: #fff;
+        margin-left: 13px; }
+        #nav nav ul #Headset .HeadsetImg a {
+          width: 260px;
+          height: 310px; }
+          #nav nav ul #Headset .HeadsetImg a :hover {
+            color: #1e96d4; }
+          #nav nav ul #Headset .HeadsetImg a img {
+            width: 260px;
+            height: 260px; }
+          #nav nav ul #Headset .HeadsetImg a p {
+            text-align: center;
+            font-size: 12px; }
+      #nav nav ul #Headset .circleImg_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 280px;
+        height: 280px;
+        position: relative; }
+        #nav nav ul #Headset .circleImg_box .circleImg {
+          width: 230px;
+          height: 230px;
+          border-radius: 50%;
+          overflow: hidden; }
+          #nav nav ul #Headset .circleImg_box .circleImg img {
+            width: 230px;
+            transition: all 0.3s linear; }
+            #nav nav ul #Headset .circleImg_box .circleImg img:hover {
+              transform: scale(1.08); }
+        #nav nav ul #Headset .circleImg_box p {
+          position: absolute;
+          color: #f7f7f7; }
+    #nav nav ul #WireLess {
+      width: 1300px;
+      height: 350px;
+      background-color: rgba(172, 172, 172, 0.7);
+      position: absolute;
+      top: 50px;
+      padding-top: 40px;
+      display: none; }
+      #nav nav ul #WireLess ul {
+        float: left;
+        margin-left: 30px; }
+        #nav nav ul #WireLess ul li a {
+          font-size: 12px;
+          margin-top: -15px; }
+          #nav nav ul #WireLess ul li a:hover {
+            color: #1e96d4;
+            text-decoration: underline; }
+        #nav nav ul #WireLess ul li .Browseall {
+          width: 120px;
+          height: 45px;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 14px;
+          margin: 20px 45px 0 0;
+          position: relative;
+          overflow: hidden; }
+          #nav nav ul #WireLess ul li .Browseall:hover {
+            color: black;
+            text-decoration: none; }
+          #nav nav ul #WireLess ul li .Browseall #MoveRight_4 {
+            position: absolute;
+            right: 10px;
+            font-size: 30px;
+            font-weight: 100;
+            animation: MRight 0.6s linear; }
+      #nav nav ul #WireLess .WireLessImg {
+        width: 260px;
+        height: 310px;
+        float: left;
+        background-color: #fff;
+        margin-left: 13px; }
+        #nav nav ul #WireLess .WireLessImg a {
+          width: 260px;
+          height: 310px; }
+          #nav nav ul #WireLess .WireLessImg a :hover {
+            color: #1e96d4; }
+          #nav nav ul #WireLess .WireLessImg a img {
+            width: 260px;
+            height: 260px; }
+          #nav nav ul #WireLess .WireLessImg a p {
+            text-align: center;
+            font-size: 12px; }
+      #nav nav ul #WireLess .circleImg_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 280px;
+        height: 280px;
+        position: relative; }
+        #nav nav ul #WireLess .circleImg_box .circleImg {
+          width: 230px;
+          height: 230px;
+          border-radius: 50%;
+          overflow: hidden; }
+          #nav nav ul #WireLess .circleImg_box .circleImg img {
+            width: 230px;
+            transition: all 0.3s linear; }
+            #nav nav ul #WireLess .circleImg_box .circleImg img:hover {
+              transform: scale(1.08); }
+        #nav nav ul #WireLess .circleImg_box p {
+          position: absolute;
+          color: #f7f7f7; }
+    #nav nav ul #Hifi {
+      width: 1300px;
+      height: 350px;
+      background-color: rgba(172, 172, 172, 0.7);
+      position: absolute;
+      top: 50px;
+      padding-top: 40px;
+      display: none; }
+      #nav nav ul #Hifi ul {
+        float: left;
+        margin-left: 30px; }
+        #nav nav ul #Hifi ul li a {
+          padding-right: 10px;
+          font-size: 12px;
+          margin-top: -15px; }
+          #nav nav ul #Hifi ul li a:hover {
+            color: #1e96d4;
+            text-decoration: underline; }
+        #nav nav ul #Hifi ul li .Browseall {
+          width: 120px;
+          height: 45px;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 14px;
+          margin: 20px 25px 0 0;
+          position: relative;
+          overflow: hidden; }
+          #nav nav ul #Hifi ul li .Browseall:hover {
+            color: black;
+            text-decoration: none; }
+          #nav nav ul #Hifi ul li .Browseall #MoveRight_5 {
+            position: absolute;
+            right: 10px;
+            font-size: 30px;
+            font-weight: 100;
+            animation: MRight 0.6s linear; }
+      #nav nav ul #Hifi .HifiImg {
+        width: 260px;
+        height: 310px;
+        float: left;
+        background-color: #fff;
+        margin-left: 13px; }
+        #nav nav ul #Hifi .HifiImg a {
+          width: 260px;
+          height: 310px; }
+          #nav nav ul #Hifi .HifiImg a :hover {
+            color: #1e96d4; }
+          #nav nav ul #Hifi .HifiImg a img {
+            width: 260px;
+            height: 260px; }
+          #nav nav ul #Hifi .HifiImg a p {
+            text-align: center;
+            font-size: 12px; }
+      #nav nav ul #Hifi .circleImg_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 280px;
+        height: 280px;
+        position: relative; }
+        #nav nav ul #Hifi .circleImg_box .circleImg {
+          width: 230px;
+          height: 230px;
+          border-radius: 50%;
+          overflow: hidden; }
+          #nav nav ul #Hifi .circleImg_box .circleImg img {
+            width: 230px;
+            transition: all 0.3s linear; }
+            #nav nav ul #Hifi .circleImg_box .circleImg img:hover {
+              transform: scale(1.08); }
+        #nav nav ul #Hifi .circleImg_box p {
+          position: absolute;
+          color: #f7f7f7; }
+    #nav nav ul #Fittings {
+      width: 1300px;
+      height: 350px;
+      background-color: rgba(172, 172, 172, 0.7);
+      position: absolute;
+      top: 50px;
+      padding-top: 40px;
+      display: none; }
+      #nav nav ul #Fittings ul {
+        float: left;
+        margin-left: 30px; }
+        #nav nav ul #Fittings ul li a {
+          font-size: 12px;
+          margin-top: -15px; }
+          #nav nav ul #Fittings ul li a:hover {
+            color: #1e96d4;
+            text-decoration: underline; }
+        #nav nav ul #Fittings ul li .Browseall {
+          width: 120px;
+          height: 45px;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 14px;
+          margin: 20px 45px 0 0;
+          position: relative;
+          overflow: hidden; }
+          #nav nav ul #Fittings ul li .Browseall:hover {
+            color: black;
+            text-decoration: none; }
+          #nav nav ul #Fittings ul li .Browseall #MoveRight_6 {
+            position: absolute;
+            right: 10px;
+            font-size: 30px;
+            font-weight: 100;
+            animation: MRight 0.6s linear; }
+      #nav nav ul #Fittings .FittingsImg {
+        width: 260px;
+        height: 310px;
+        float: left;
+        background-color: #fff;
+        margin-left: 13px; }
+        #nav nav ul #Fittings .FittingsImg a {
+          width: 260px;
+          height: 310px; }
+          #nav nav ul #Fittings .FittingsImg a :hover {
+            color: #1e96d4; }
+          #nav nav ul #Fittings .FittingsImg a img {
+            width: 260px;
+            height: 260px; }
+          #nav nav ul #Fittings .FittingsImg a p {
+            text-align: center;
+            font-size: 12px; }
+      #nav nav ul #Fittings .circleImg_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 280px;
+        height: 280px;
+        position: relative; }
+        #nav nav ul #Fittings .circleImg_box .circleImg {
+          width: 230px;
+          height: 230px;
+          border-radius: 50%;
+          overflow: hidden; }
+          #nav nav ul #Fittings .circleImg_box .circleImg img {
+            width: 230px;
+            transition: all 0.3s linear; }
+            #nav nav ul #Fittings .circleImg_box .circleImg img:hover {
+              transform: scale(1.08); }
+        #nav nav ul #Fittings .circleImg_box p {
+          position: absolute;
+          color: #f7f7f7; }
+
+.BodyFirst {
+  width: 1300px;
+  height: 1350px;
+  margin: 0 auto; }
+  .BodyFirst h3 {
+    font-size: 32px;
+    color: black;
+    margin: 60px 0 20px 0; }
+  .BodyFirst .FirstTop, .BodyFirst .FirstBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .BodyFirst .FirstTop li, .BodyFirst .FirstBottom li {
+      height: 580px;
+      width: 410px;
+      position: relative; }
+      .BodyFirst .FirstTop li img, .BodyFirst .FirstBottom li img {
+        width: 100%;
+        height: 100%; }
+      .BodyFirst .FirstTop li .title, .BodyFirst .FirstBottom li .title {
+        width: 410px;
+        height: 120px;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        bottom: 0;
+        margin: 0 0 0 0; }
+        .BodyFirst .FirstTop li .title h6, .BodyFirst .FirstBottom li .title h6 {
+          color: #fff;
+          font-size: 18px;
+          margin: 20px 0 10px 20px; }
+        .BodyFirst .FirstTop li .title p, .BodyFirst .FirstBottom li .title p {
+          color: #fff;
+          margin-left: 20px; }
+
+.BodyBottom {
+  width: 1300px;
+  margin: 0 auto;
+  height: 670px; }
+  .BodyBottom .Most {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 1300px;
+    margin-top: 20px; }
+    .BodyBottom .Most h3 {
+      font-size: 32px;
+      color: black; }
+    .BodyBottom .Most a {
+      text-decoration: none; }
+  .BodyBottom .Bottom_Left {
+    height: 580px;
+    width: 560px;
+    position: relative;
+    float: left;
+    overflow: hidden; }
+    .BodyBottom .Bottom_Left img {
+      height: 580px;
+      width: 560px;
+      transition: all 0.3s linear; }
+      .BodyBottom .Bottom_Left img:hover {
+        transform: scale(1.07); }
+    .BodyBottom .Bottom_Left .title {
+      width: 560px;
+      height: 90px;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      bottom: 0;
+      margin: 0 0 0 0; }
+      .BodyBottom .Bottom_Left .title h6 {
+        color: #fff;
+        font-size: 16px;
+        margin: 20px 0 10px 20px; }
+      .BodyBottom .Bottom_Left .title p {
+        color: #1e96d4;
+        font-size: 16px;
+        margin-left: 20px; }
+        .BodyBottom .Bottom_Left .title p strong {
+          color: #1e96d4;
+          font-size: 20px; }
+  .BodyBottom .BottomOtherUl {
+    width: 740px;
+    height: 580px;
+    float: left;
+    background-color: #fff; }
+    .BodyBottom .BottomOtherUl li a {
+      float: left;
+      width: 370px;
+      height: 290px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none; }
+      .BodyBottom .BottomOtherUl li a img {
+        width: 200px;
+        height: 200px; }
+      .BodyBottom .BottomOtherUl li a .OtherTitle {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; }
+        .BodyBottom .BottomOtherUl li a .OtherTitle h6 {
+          font-size: 16px;
+          margin-bottom: 10px; }
+        .BodyBottom .BottomOtherUl li a .OtherTitle p {
+          color: #1e96d4;
+          font-size: 16px; }
+          .BodyBottom .BottomOtherUl li a .OtherTitle p strong {
+            color: #1e96d4;
+            font-size: 16px;
+            font-weight: bold; }
+
+.BodyBottomLast {
+  width: 1300px;
+  margin: 0 auto;
+  height: 680px; }
+  .BodyBottomLast .Most {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 1300px;
+    margin-top: 20px; }
+    .BodyBottomLast .Most h3 {
+      font-size: 32px;
+      color: black; }
+    .BodyBottomLast .Most a {
+      text-decoration: none; }
+  .BodyBottomLast .Last_Left {
+    height: 580px;
+    width: 560px;
+    position: relative;
+    float: left;
+    overflow: hidden; }
+    .BodyBottomLast .Last_Left img {
+      height: 580px;
+      width: 560px;
+      transition: all 0.3s linear; }
+      .BodyBottomLast .Last_Left img:hover {
+        transform: scale(1.07); }
+    .BodyBottomLast .Last_Left .title {
+      width: 560px;
+      height: 90px;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      bottom: 0;
+      margin: 0 0 0 0; }
+      .BodyBottomLast .Last_Left .title h6 {
+        color: #fff;
+        font-size: 16px;
+        margin: 20px 0 10px 20px; }
+      .BodyBottomLast .Last_Left .title p {
+        color: #1e96d4;
+        font-size: 16px;
+        margin-left: 20px; }
+        .BodyBottomLast .Last_Left .title p strong {
+          color: #1e96d4;
+          font-size: 20px; }
+  .BodyBottomLast .LeftOther {
+    width: 740px;
+    height: 580px;
+    float: left;
+    background-color: #fff; }
+    .BodyBottomLast .LeftOther li {
+      float: left;
+      width: 370px;
+      height: 290px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
+      .BodyBottomLast .LeftOther li a {
+        text-decoration: none; }
+      .BodyBottomLast .LeftOther li img {
+        width: 200px;
+        height: 200px; }
+      .BodyBottomLast .LeftOther li .OtherTitle {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; }
+        .BodyBottomLast .LeftOther li .OtherTitle h6 {
+          font-size: 16px;
+          margin-bottom: 10px; }
+        .BodyBottomLast .LeftOther li .OtherTitle p {
+          color: #1e96d4;
+          font-size: 16px; }
+          .BodyBottomLast .LeftOther li .OtherTitle p strong {
+            color: #1e96d4;
+            font-size: 16px;
+            font-weight: bold; }
+
+footer {
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 30px; }
+  footer p {
+    float: right; }
+  footer fieldset {
+    border-top: 1px solid black;
+    width: 1300px;
+    margin: 0 auto;
+    height: 40px; }
+    footer fieldset legend {
+      margin-left: 40px;
+      font-size: 20px;
+      color: black; }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer ul li a:hover {
+      text-decoration: none; }
+    footer ul li div {
+      width: 400px;
+      height: 120px;
+      background-color: #fff;
+      overflow: hidden;
+      position: relative; }
+      footer ul li div h3 {
+        font-size: 16px;
+        color: black;
+        margin: 30px; }
+      footer ul li div p {
+        font-size: 12px;
+        color: #acacac;
+        float: left;
+        position: absolute;
+        bottom: 25px;
+        left: 30px; }
+    footer ul li img {
+      width: 400px;
+      height: 260px; }
+
+#bottom {
+  background-color: black;
+  margin-top: 70px; }
+  #bottom section {
+    width: 1300px;
+    margin: 0 auto;
+    height: 200px; }
+    #bottom section ul {
+      float: left;
+      margin-right: 60px;
+      font-size: 12px; }
+      #bottom section ul p {
+        margin-top: 30px;
+        color: #acacac; }
+        #bottom section ul p span {
+          margin-right: 10px;
+          color: #acacac; }
+      #bottom section ul li {
+        margin-left: 12px;
+        margin-top: 6px; }
+        #bottom section ul li a {
+          color: #acacac;
+          font-size: 12px; }
+          #bottom section ul li a:hover {
+            color: #fff; }
+    #bottom section div {
+      float: left;
+      margin-top: 30px; }
+      #bottom section div h3 {
+        font-size: 12px;
+        color: #acacac; }
+      #bottom section div p {
+        font-size: 12px;
+        color: #acacac;
+        margin: 6px 0; }
+      #bottom section div h5 {
+        color: #1e96d4;
+        font-size: 20px;
+        font-weight: 800; }
+    #bottom section .inner {
+      float: right;
+      margin-right: 0;
+      margin-top: 20px; }
+      #bottom section .inner li {
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column; }
+        #bottom section .inner li img {
+          width: 120px;
+          height: 120px; }
+        #bottom section .inner li p {
+          margin-top: 10px; }
+
+.FooterBottom {
+  width: 1300px;
+  margin: 0 auto;
+  height: 250px; }
+  .FooterBottom img {
+    background-color: #acacac;
+    margin-top: 70px; }
+  .FooterBottom p {
+    font-size: 12px;
+    color: black;
+    margin-top: 6px; }
+    .FooterBottom p a {
+      font-size: 12px;
+      color: black; }
